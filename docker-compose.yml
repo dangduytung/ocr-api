@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  ocr-api:
+    image: ocr-api:${VERSION:-latest}
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - "${PORT}:3000"
+    volumes:
+      - ./data:/app/data
