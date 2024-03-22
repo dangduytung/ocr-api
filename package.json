@@ -29,7 +29,7 @@
     "canvas": "^2.11.2",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
-    "tesseract.js": "^5.0.5"
+    "tesseract.js": "^2.1.5"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",

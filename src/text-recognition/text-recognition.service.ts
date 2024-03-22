@@ -11,7 +11,12 @@ export class TextRecognitionService {
   constructor(private readonly httpService: HttpService) {}
 
   async recognizeText(imageData: string | Buffer): Promise<string> {
-    const worker = await createWorker('eng');
+    const worker = createWorker({
+      logger: (m) => console.log(m),
+    });
+    await worker.load();
+    await worker.loadLanguage('eng');
+    await worker.initialize('eng');
 
     const { data } = await worker.recognize(imageData);
     await worker.terminate();

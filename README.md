@@ -1,5 +1,5 @@
 # OCR-API (Text Recognition)
-This project utilizes Nest.js 10.x, Tesseract 5.x, and from Node.js 18.x to build a text recognition service capable of extracting text from images, base64 strings, and links.
+This project utilizes Nest.js 10.x, **Tesseract 2.1.5 (Deprecated), and Node.js 16.x** to build a text recognition service capable of extracting text from images, base64 strings, and links.
 
 #### Explore further:
 

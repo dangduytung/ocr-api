@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM node:20-slim as base
+FROM node:16-slim as base
 
 FROM base AS builder
 
